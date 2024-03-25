@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
         conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tokitoki[id][0])
         throw false
     }
-    let src = await (await fetch('https://raw.githubusercontent.com/kimos7/AURTER-BOT/main/Games/eyeanime.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/kimos71/AURTER-BOT/main/Games/eyeanime.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
     let caption = `*❰❖── ~『𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇』~──❖❱*\n *•┇❖↞استخدم انسحب للانسحاب┇👁️❯*
  *•┃❖↞الـوقـت⏳↞* *${(timeout / 1000).toFixed(2)}* *ثانية┇❯*
@@ -26,6 +26,6 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 }
 handler.help = ['guesseye']
 handler.tags = ['game']
-handler.command = /^عين/i
+handler.command = /^عين$/i
 
 export default handler
