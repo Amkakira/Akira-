@@ -5,7 +5,7 @@ if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*⏱️ 
 let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
 else who = m.chat
-if (!who) throw `*[❗] منشن للي هتسرقه اااااا اقطعو يده حرامي*`
+if (!who) throw `*[❗] هتسرق مين ي حب منشن ل الي هتسرقه*`
 if (!(who in global.db.data.users)) throw `*[❗] المستخدم غير موجود في قاعدة البيانات الخاصة بي.*`
 let users = global.db.data.users[who]
 let rob = Math.floor(Math.random() * ro)
