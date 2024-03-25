@@ -8,13 +8,13 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['‪22231675561‬', '🔪 JOHAN ', true],
-  ['22231675561', ' 3MK 💸', true],
+  ['‪201020639057‬', '𝑨𝑲𝑰𝑹𝑨 ', true],
+  ['201020639057', '𝑨𝑲𝑰𝑹𝑨 ', true],
 ];
 
 global.xaxa = 'kana'
-global.suittag = ['22231675561', '22231675561'];
-global.prems = ['22231675561', '22231675561'];
+global.suittag = ['201020639057', '201020639057'];
+global.prems = ['201020639057', '201020639057'];
 
 global.packname = 'Nezuko🧸 ';
 global.author = '★Nezuko🌺★';
