@@ -107,6 +107,63 @@ let handler = m => m;
      responses = [ 
        '*اسمي نيزوكو ي غبي باكااا*',  
      ];
+    
+    }else if (/^اكيرا$/i.test(m.text)) { 
+     responses = [ 
+       '*عمك*',  
+     ];
+        }else if (/^المطور$/i.test(m.text)) { 
+     responses = [ 
+       '*السيد اكيرا*',  
+     ];
+        }else if (/^مطور$/i.test(m.text)) { 
+     responses = [ 
+       '*عمك اكيرا*',  
+     ];
+        }else if (/^مين المطور$/i.test(m.text)) { 
+     responses = [ 
+       '*لما تكبر اقولك*',  
+     ];
+        }else if (/^.مطور$/i.test(m.text)) { 
+     responses = [ 
+       '*حط ال*',  
+     ];
+        }else if (/^اسكت$/i.test(m.text)) { 
+     responses = [ 
+       '*اسكت انت*',  
+     ];
+        }else if (/^اصمت$/i.test(m.text)) { 
+     responses = [ 
+       '*بلاش اهينك*',  
+     ];
+        }else if (/^بحبك$/i.test(m.text)) { 
+     responses = [ 
+       '*حبك برص*',  
+     ];
+        }else if (/^عبدو$/i.test(m.text)) { 
+     responses = [ 
+       '*عيونه*',  
+     ];
+        }else if (/^.تعدين$/i.test(m.text)) { 
+     responses = [ 
+       '*ف هذا البوت اسمها التعدين*',  
+     ];
+        }else if (/^اسمع$/i.test(m.text)) { 
+     responses = [ 
+       '*لا*',  
+     ];
+        }else if (/^اه$/i.test(m.text)) { 
+     responses = [ 
+       '*الشارع الي وراه*',  
+     ];
+        }else if (/^اي$/i.test(m.text)) { 
+     responses = [ 
+       '*خدتك😉*',  
+     ];
+       }else if (/^هاي$/i.test(m.text)) { 
+     responses = [ 
+       '*خدتك😉*',  
+     ];
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
