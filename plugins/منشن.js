@@ -5,11 +5,11 @@ throw false
 }//غير ڤينوم و حط اسم بوتك
 let pesan = args.join` `
 let oi = `*♚~الرساله:* ${pesan}`
-let teks = ` * \n\n ${oi}\n\n*🗡┇ منشن  :⇣*\n`
+let teks = `  \n\n ${oi}\n\n 🗡┇ *منشن*  :⇣\n`
 for (let mem of participants) {
 teks += `*•┃➥ تفاعل ي حب⏎* @${mem.id.split('@')[0]}\n`}
   
-teks += `*𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇*\n\n*
+teks += `*𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇*\n\n
 ❖━━━━━━[ 𝑁𝐸𝑍𝑈𝐾𝛩-𝐵𝛩𝑇 ]━━━━━❖`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
