@@ -44,6 +44,13 @@ let handler = m => m;
        '*وعليكم السلام*',  
 
      ]; 
+
+}else if (/^بوت|بوت$/i.test(m.text)) { 
+     responses = [ 
+       ' *ا❐┃اسمي نيزوكو لعرض الاوامر اكتب .اوامر* ',  
+      
+     ];
+    
 }else if (/^بحبك/i.test(m.text)) { 
      responses = [ 
        '*هممممممم*',  
