@@ -6,7 +6,7 @@ let b
 do b = ps.getRandom()
 while (b === a)
 m.reply(`❖┃${toM(a)},  *كانت نكديه ربنا يسامحها😔*
-❐┃${toM(b)},*زنجي و راح* \n\**`, null, {
+❐┃${toM(b)},*زنجي و راح* \n\ٕ`, null, {
 mentions: [a, b]
 })}
 handler.help = ['formarpareja']
