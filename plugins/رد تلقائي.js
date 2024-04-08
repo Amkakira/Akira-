@@ -9,7 +9,7 @@ let handler = m => m;
    let responses; 
    if (/^هلا$/i.test(m.text)) { 
      responses = [ 
- '*ارحب*'  
+ '*هلا*'  
      ]; 
 } else if (/^السلام عليكم|سلام عليكم ورحمه الله وبركاته|سلام عليكم|السلام عليكم ورحمه الله وبركاته$/i.test(m.text)) { 
      responses = [ 
@@ -41,7 +41,7 @@ let handler = m => m;
      
      }else if (/^هاي|هالو$/i.test(m.text)) { 
      responses = [ 
-       '*وعليكم السلام*',  
+       '*هاي*',  
 
      ]; 
 
@@ -53,7 +53,7 @@ let handler = m => m;
     
 }else if (/^بحبك/i.test(m.text)) { 
      responses = [ 
-       '*هممممممم*',  
+       '*روح نام*',  
 
      ]; 
    }else if (/^فلسطين$/i.test(m.text)) { 
