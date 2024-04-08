@@ -1,15 +1,14 @@
-import { webp2png } from '../lib/webp2mp4.js'
+import { toAudio } from '../lib/converter.js'
 let handler = async (m, { conn, usedPrefix, command }) => {
-const notStickerMessage = `*رد علي الملصق الذي تريد تحويله لصوره ${usedPrefix + command}*`
-if (!m.quoted) throw notStickerMessage
-const q = m.quoted || m
-let mime = q.mediaType || ''
-if (!/sticker/.test(mime)) throw notStickerMessage
+let q = m.quoted ? m.quoted : m
+let mime = (q || q.msg).mimetype || q.mediaType || ''
+if (!/video|audio/.test(mime)) throw `*اعمل ريبلاي للفديو ال عاوز تخليه صوت يحب*`
 let media = await q.download()
-let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
-await conn.sendFile(m.chat, out, 'error.png', null, m)
+if (!media) throw '*انا اسف حدث خطأ حاول مجددا*'
+let audio = await toAudio(media, 'mp4')
+if (!audio.data) throw '*حدث خطأ في تحويل الفيديو الي صوت*'
+conn.sendMessage(m.chat, { audio: audio.data,  mimetype: 'audio/mpeg' }, { quoted: m })
 }
-handler.help = ['toimg (reply)']
-handler.tags = ['sticker']
-handler.command = ['لصوره', 'صورة', 'لصورة']
-export default handler
+handler.alias = ['tomp3', 'toaudio']
+handler.command = /^ل(صوت|صوتي|اغنيه)$/i
+ default handler
