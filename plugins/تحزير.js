@@ -14,7 +14,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   const dReason = 'بدون سبب';
   const msgtext = text || dReason;
   const sdms = msgtext.replace(/@\d+-?\d* /g, '');
-  const warntext = `*[❗] قم بالرد علي الرساله او منشن المستخدم *\n\n*—◉ مثال:*\n*${
+  const warntext = `*[❗] قم بالرد علي الرساله او منشن المستخدم *\n\n*مثال:*\n*${
     usedPrefix + command
   } @${global.suittag}*`;
   if (!who) {
@@ -49,7 +49,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   return !1;
 };
 
-handler.command = /^(advertir|advertencia|warn|تحزير)$/i;
+handler.command = /^(advertir|advertencia|warn|تحذير)$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;
