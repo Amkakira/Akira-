@@ -44,12 +44,6 @@ let handler = m => m;
        '*هاي*',  
 
      ]; 
-
-}else if (/^بوت|بوت$/i.test(m.text)) { 
-     responses = [ 
-       ' *ا❐┃اسمي نيزوكو لعرض الاوامر اكتب .اوامر* ',  
-      
-     ];
     
 }else if (/^بحبك/i.test(m.text)) { 
      responses = [ 
@@ -82,7 +76,7 @@ let handler = m => m;
      
      }else if (/^اهلا$/i.test(m.text)) { 
      responses = [ 
-       '*هلا بلحب *',  
+       '*هلا بلحب*',  
 
      ]; 
      }else if (/^مساء|مساء$/i.test(m.text)) { 
@@ -139,10 +133,7 @@ let handler = m => m;
      responses = [ 
        '*بلاش اهينك*',  
      ];
-        }else if (/^بحبك$/i.test(m.text)) { 
-     responses = [ 
-       '*حبك برص*',  
-     ];
+       
         }else if (/^عبدو$/i.test(m.text)) { 
      responses = [ 
        '*عيونه*',  
@@ -155,18 +146,7 @@ let handler = m => m;
      responses = [ 
        '*لا*',  
      ];
-        }else if (/^اه$/i.test(m.text)) { 
-     responses = [ 
-       '*الشارع الي وراه*',  
-     ];
-        }else if (/^اي$/i.test(m.text)) { 
-     responses = [ 
-       '*خدتك😉*',  
-     ];
-       }else if (/^هاي$/i.test(m.text)) { 
-     responses = [ 
-       '*خدتك😉*',  
-     ];
+      
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
