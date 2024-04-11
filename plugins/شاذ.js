@@ -1,14 +1,17 @@
-let handler = async (m, { conn }) => {
-let vn = './gay2.mp3'
-let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/gay', {
-avatar: await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/3bd9bc1ab15adf4f041b5.jpg'),
-}), 'error.png', '*🏳️‍🌈 اكبر شاذ هو انت 🏳️‍🌈*', m)
-await await await conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true })
-}
-handler.help = ['شاذ']
-handler.tags = ['maker']
-handler.command = /^(شاذ)$/i
+import util from 'util'
+import path from 'path'
+let user = a => '@' + a.split('@')[0]
+function handler(m, { groupMetadata, command, conn, text, usedPrefix}) {
+let ps = groupMetadata.participants.map(v => v.id)
+let a = ps.getRandom()
+let k = Math.floor(Math.random() * 70);
+let top = `*${user(a)} 🏳️‍🌈انــت هــو اكبر شاذ *`.trim()
+conn.sendFile (m.reply (top, null, { mentions: [a]}))}
+handler.help = handler.command = ['شاذ']
+handler.tags = ['fun']
+handler.group = true
+handler.limit = 0
 export default handler
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]}
+
