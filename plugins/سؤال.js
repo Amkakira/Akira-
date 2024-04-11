@@ -33,6 +33,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 handler.help = ['miku'];
 handler.tags = ['game'];
-handler.command = /^(انمي)$/i;
+handler.command = /^(اسئله)$/i;
 
 export default handler;
