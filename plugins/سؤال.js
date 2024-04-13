@@ -14,8 +14,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = tekateki[Math.floor(Math.random() * tekateki.length)];
     let _clue = json.response;
     let clue = _clue.replace(/[A-Za-z]/g, ''); // Fixed this line
-    let caption = `*❖━━━━━━━[ الـــــســـــؤال ]━━━━━━❖*
-    
+    let caption = ` 
 ⷮ ${json.question}
 ❐↞┇الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)}┇
 ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
