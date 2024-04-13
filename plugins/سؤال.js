@@ -16,7 +16,6 @@ let handler = async (m, { conn, usedPrefix }) => {
     let clue = _clue.replace(/[A-Za-z]/g, ''); // Fixed this line
     let caption = `
 ⷮ ${json.question}
-
 ❐↞┇الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)}┇
 ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
 *❖━━━━━━[ 𝑁𝐸𝑍𝑈𝐾𝛩-𝐵𝛩𝑇 ]━━━━━❖*
@@ -33,6 +32,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 handler.help = ['miku'];
 handler.tags = ['game'];
-handler.command = /^(اسئله)$/i;
+handler.command = /^(انمي)$/i;
 
 export default handler;
