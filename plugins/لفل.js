@@ -26,13 +26,13 @@ conn.sendFile(m.chat, pp, 'levelup.jpg', lvl, m)
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
         let teks = `عاش يحب! ${conn.getName(m.sender)} المستوي: ${user.level}`
-        let str = `┓━━━━【 *الـتصـنـيف* 】━━━━┏
+        let str = `┓━━━━【 *مستوي جديد* 】━━━━┏
 ┇🎗 *المستوي السابق :* *${before}*
  ──────────────
 ┇🎁 *المستوي الحالي :* *${user.level}*
  ──────────────
 ┇🏹 *التصنيف :* ${role} 
-┛━━━⊰ Nezuko ⊱━━━┗`.trim()
+┛━━━⊰ 𝑁𝐸𝑍𝑈𝐾𝛩 ⊱━━━┗`.trim()
         try {
             const img = await levelup(teks, user.level)
             conn.sendFile(m.chat, pp, 'levelup.jpg', str, m)
