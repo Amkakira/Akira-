@@ -3,7 +3,7 @@ let handler = async (m, { conn, participants }) => {
     let q = m.quoted ? m.quoted : m
     let msg = await conn.sendMessage(m.chat, '', 'extendedTextMessage', { quoted: q })
     let mentionedJid = users.filter(user => user !== conn.user.jid)
-    await conn.sendMessage(msg.key.remoteJid, '', 'extendedTextMessage', { contextInfo: { mentionedJid }, quoted: msg })
+    await conn.sendMessageWithMentions(msg.key.remoteJid, '', mentionedJid, { quoted: msg })
 }
 handler.help = ['hidetag']
 handler.tags = ['group']
