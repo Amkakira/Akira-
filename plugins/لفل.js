@@ -45,7 +45,7 @@ await delay(5 * 5000)
 handler.help = ['levelup']
 handler.tags = ['xp']
 
-handler.command = ['nivel', 'lvl', 'رانك', 'لفل'] 
+handler.command = ['nivel', 'lvl', 'الفل', 'لفل'] 
 
 export default handler
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
