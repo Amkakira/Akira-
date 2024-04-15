@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let nn = "https://example.com/image-details"; // تعريف المتغير nn بقيمة URL
   text = text.endsWith('SMH') ? text.replace('SMH', '') : text 
   if (!text) throw '*[❗مساعده❗]*\n*•┃❖ابحث على اي صوره ا. شخصيه ترديها*\n*•┃❖مثال افتار اكيرا افتار نيزوكو*'
-  await conn.reply(m.chat, '*انتضر جار تحميل الافتار*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝐿𝑈𝐹𝐹𝑌-𝐵𝛩𝑇', body: `【𝟐𝟎𝟎𝟓/𝟐/𝟏𝟎】١⁵`, sourceUrl: nn,thumbnail: '' }}})
+  await conn.reply(m.chat, '*انتضر جار تحميل الافتار*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: '𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇', body: `𝑇𝐸𝑁𝐷𝛩𝑈, 𝐴𝐾𝐼𝑅𝐴⁵`, sourceUrl: nn,thumbnail: '' }}})
   let res = await pinterest(text)
   // if (!res) throw res
   let mime = await lookup(res)
