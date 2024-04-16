@@ -1,5 +1,5 @@
-let welcomeMessage = "اهلا بك  منور/ه.";
-let goodbyeMessage = "الي الجحيم";
+let welcomeMessage = "أهلاً بك في الجروب الجديد! نتمنى لك وقتًا ممتعًا معنا.";
+let goodbyeMessage = "نأسف لرؤيتك تغادر الجروب. نتمنى لك كل التوفيق!";
 
 let handler = async (m, { conn, participants }) => {
     let user = participants.find(user => user.jid === m.sender);
@@ -15,7 +15,7 @@ let handler2 = async (m, { conn, participants }) => {
     if (user) {
         let target = m.action.split(" ")[0].replace('@', '').replace('c.us', '');
         await conn.reply(m.chat, `${goodbyeMessage}`, m);
-        await conn.sendMessage(target + '@c.us', `خرج المستخدم . رقم العضو: ${m.action.split(" ")[0].replace('@', '').replace('c.us', '')}`);
+        await conn.sendMessage(target + '@c.us', `يتم الوداع من الجروب. رقم العضو: ${m.action.split(" ")[0].replace('@', '').replace('c.us', '')}`);
     }
 };
 
