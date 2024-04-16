@@ -18,7 +18,7 @@ throw `
 
 انت تحتاج الي ${max - user.exp} XP لرفع مستواك
 `.trim()
-
+}
 let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 if (before !== user.level) {
