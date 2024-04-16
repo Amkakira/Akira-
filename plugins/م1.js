@@ -1,4 +1,4 @@
-await conn.sendMessage(m.chat, { react: { text: '1️⃣', key: m.key } })
+
 let handler = async (m, { conn, command, text }) => {
 let love = `
 
