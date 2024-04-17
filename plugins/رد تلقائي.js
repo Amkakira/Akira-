@@ -22,6 +22,10 @@ let handler = m => m;
      responses = [ 
        '*اكتب ↞.استماره*',  
      ];
+        }else if (/^.استمارة$/i.test(m.text)) { 
+     responses = [ 
+       '*استخدم حرف الهاء وليس التاء*',  
+     ];
     
     }else if (/^اكيرا$/i.test(m.text)) { 
      responses = [ 
