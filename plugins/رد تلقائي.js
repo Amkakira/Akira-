@@ -4,9 +4,9 @@ let handler = m => m;
 
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
-   if (/^نيزيكو$/i.test(m.text)) { 
+   if (/^نيزوكو$/i.test(m.text)) { 
      responses = [ 
- '*ها وش تريد 🗿*'  
+ '🫦✨'  
      ];
     
        }else if (/^اوامر$/i.test(m.text)) { 
