@@ -14,9 +14,13 @@ let handler = m => m;
        '*لا تنسى النقطه*',  
      ];
             
-            }else if (/^نيزكو$/i.test(m.text)) { 
+            }else if (/^استماره$/i.test(m.text)) { 
      responses = [ 
-       '*اسمي نيزوكو ي غبي باكااا*',  
+       '*اكتب .استماره*',  
+     ];
+        }else if (/^استمارة$/i.test(m.text)) { 
+     responses = [ 
+       '*اكتب ↞.استماره*',  
      ];
     
     }else if (/^اكيرا$/i.test(m.text)) { 
